@@ -1,5 +1,5 @@
 def prime?(integer)
-  return false if n < 2
+  return false if integer < 2
   n = 2
   while n < integer
     return false if integer % n == 0
