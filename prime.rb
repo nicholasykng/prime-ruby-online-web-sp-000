@@ -1,4 +1,6 @@
 def prime?(integer)
+  if integer > 0
+    true
   n = 2
   while n < integer
     return false if integer % n == 0
