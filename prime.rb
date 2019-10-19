@@ -1,11 +1,6 @@
 def prime?(integer)
-  if integer < 0
-    false
-  end
-  n = 2
-  while n < integer
-    return false if integer % n == 0
-    n += 1
+  (2..(integer-1)).each do |i|
+    return false if integer % i == 0
   end
   true
 end
